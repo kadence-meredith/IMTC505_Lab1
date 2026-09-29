@@ -8,6 +8,8 @@ TagManager:
   - greenOrb
   - orangeOrb
   - pinkOrb
+  - floor
+  - potion
   layers:
   - Default
   - TransparentFX
