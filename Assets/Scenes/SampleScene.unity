@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 97938722}
   - component: {fileID: 97938721}
   - component: {fileID: 97938720}
+  - component: {fileID: 97938725}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: greenOrb
@@ -162,7 +163,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -259,6 +260,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &97938725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97938719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8621074d6037174098cc406245b43c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::floatingHover
+  floatSpeed: 2
+  floatAmplitude: 0.2
 --- !u!1 &135094877
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,6 +287,7 @@ GameObject:
   - component: {fileID: 135094880}
   - component: {fileID: 135094879}
   - component: {fileID: 135094878}
+  - component: {fileID: 135094883}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: orangeOrb
@@ -302,7 +318,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -399,6 +415,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &135094883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135094877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8621074d6037174098cc406245b43c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::floatingHover
+  floatSpeed: 2
+  floatAmplitude: 0.2
 --- !u!1 &135208260
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,12 +1076,26 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 14.603603, y: 1.5091003, z: 2.9195}
   m_Center: {x: -0.38690028, y: -0.046250027, z: 1.23185}
+--- !u!114 &733450484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733450477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62479ef8748b4504b954bfaeb43da6a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::wandInteractions
+  newGreenMaterial: {fileID: 2100000, guid: 729026fd032e8ea489a90336a662de93, type: 2}
+  growthFactor: 2
 --- !u!1 &768125032 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: fc1b0b8ca6126394eb1de707b67c0852, type: 3}
@@ -1118,6 +1162,7 @@ GameObject:
   - component: {fileID: 912115818}
   - component: {fileID: 912115817}
   - component: {fileID: 912115816}
+  - component: {fileID: 912115821}
   m_Layer: 0
   m_Name: Sphere (2)
   m_TagString: pinkOrb
@@ -1148,7 +1193,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1245,6 +1290,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &912115821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912115815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8621074d6037174098cc406245b43c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::floatingHover
+  floatSpeed: 2
+  floatAmplitude: 0.2
 --- !u!1001 &1287769590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1327,6 +1386,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -80822881106897520, guid: bccfbcc06e9dc4e469c8143fe12aa1bb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 733450483}
+    - targetCorrespondingSourceObject: {fileID: -80822881106897520, guid: bccfbcc06e9dc4e469c8143fe12aa1bb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 733450484}
   m_SourcePrefab: {fileID: 100100000, guid: bccfbcc06e9dc4e469c8143fe12aa1bb, type: 3}
 --- !u!1001 &1700560743
 PrefabInstance:
